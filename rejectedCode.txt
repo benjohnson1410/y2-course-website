@@ -1,0 +1,82 @@
+HTML:
+<label for="showMenu" class="showMenu">Show Menu</label>
+<input type="checkbox" id="showMenu" role="button" />
+<ul class="mainNav">
+	<li><a href="#about">About</a></li>
+	<li><a href="#courses">Courses</a></li>
+	<ul class="dropDown">
+		<li><a href="#">Lectures</a></li>
+		<li><a href="#">Seminars</a></li>
+		<li><a href="#">Assessments</a></li>
+		<li><a href="#">Resources</a></li>
+	</ul>
+	li><a href="#contact">Contact</a></li>
+</ul>
+
+CSS:
+.headNav {
+	width: 50%;
+	float: right;
+}
+
+.mainNav {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	list-style-type: none;
+	line-height: 0;
+}
+
+.mainNav li {
+	display: inline-block;
+	margin-right: 0.063em;
+	float: left;
+	background: #E1E1E1;
+}
+
+.mainNav li a {
+	display: block;
+	width: 6.250em;
+	height: 1.875em;
+	text-align: center;
+	line-height: 1.8em;
+	font-family: 'Roboto', sans-serif;
+	color: #2196F3;
+}
+
+/* As the mouse rolls over a link, do the following: */
+.mainNav li:hover {
+	background: #2196F3;
+}
+
+.mainNav li a:hover {
+	color: #FFFFFF;
+}
+
+/* DROP-DOWN MENU */
+
+/* Hide the drop-down menu until it is necessary. */
+.mainNav .dropDown {
+	display: none;
+}
+
+.mainNav .dropDown:hover {
+	display: block;
+	float: none;
+	list-style-type: none;
+	line-height: 1em;
+}
+
+.mainNav .dropDown li a {
+	width: auto;
+	text-align: center;
+}
+
+/* Display drop-down menu: */
+.mainNav li a:hover + .dropDown, .dropDown:hover {
+	display: block;
+}
+
+WHY WAS THIS EXCLUDED?
+- Labels and inputs should not appear as descendants of hyperlinks.
+- Nesting rules violated - a comes before li.
