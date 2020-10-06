@@ -1,0 +1,197 @@
+/* COURSES PAGE */
+
+h1, h2, p, ul, li, a {
+	color: #FFFFFF;
+}
+
+#sectionL, #sectionD, #sectionN, #sectionS, #sectionW {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	width: 100%;
+	height: 100vh;
+}
+
+.course {
+	position: relative;
+	width: 100%;
+	height: 150%;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.landing {
+	background: linear-gradient(rgba(0, 188, 212, 0.5), rgba(25, 118, 210, 0.5)), url("../img/i8.jpeg");
+}
+
+.landing .content {
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	transform: translateY(30%);
+}
+
+.landing .content h1 {
+	text-transform: uppercase;
+}
+
+.courseIntro {
+	font-size: 0.8em;
+}
+
+.courseLinks {
+	text-transform: uppercase;
+	list-style-type: none;
+}
+
+.courseLinks li {
+	margin: 0.5em;
+	padding: 0.5em;
+	border: 0.125em solid #FFFFFF;
+}
+
+.courseLinks li:hover {
+	background-color: rgba(0, 106, 255, 0.4);
+}
+
+.courseLinks li a {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+.databases, .networks, .software, .websites {
+	margin: 0;
+	padding: 3.125em 0 0 0;
+}
+
+.databases h2, .networks h2, .software h2, .websites h2 {
+	font-size: 1em;
+}
+
+.databases p, .networks p, .software p, .websites p {
+	font-size: 0.8em;
+}
+
+.databases {
+	background-image: linear-gradient(rgba(0, 188, 212, 0.5), rgba(25, 118, 210, 0.5)), url("../img/i9.jpeg");
+}
+
+.networks {
+	background-image: linear-gradient(rgba(0, 188, 212, 0.5), rgba(25, 118, 210, 0.5)), url("../img/i10.jpeg");
+}
+
+.software {
+	background-image: linear-gradient(rgba(0, 188, 212, 0.5), rgba(25, 118, 210, 0.5)), url("../img/i11.jpeg");
+}
+
+.websites {
+	background-image: linear-gradient(rgba(0, 188, 212, 0.5), rgba(25, 118, 210, 0.5)), url("../img/i12.jpeg");
+}
+
+.content {
+	margin: 0 auto;
+	width: 90%;
+}
+
+.curriculum, .assessments {
+  padding: 1em;
+}
+
+.curriculum {
+	display: block;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	width: 100%;
+	height: 20%;
+}
+
+.curriculum .list {
+	max-height: 10em;
+	overflow: hidden;
+	overflow-y: scroll;
+}
+
+.curriculum li {
+	margin: 0;
+	padding: 0.5em;
+	width: 100%;
+	height: auto;
+	background-color: rgba(3, 155, 229, 0.6);
+	list-style-type: none;
+}
+
+.curriculum li:nth-child(even) {
+	background-color: rgba(2, 136, 209, 0.6);
+}
+
+.curriculum li:hover {
+  color: rgb(3, 155, 209);
+  background-color: #FFFFFF;
+}
+
+.curriculum li:nth-child(even):hover {
+  color: rgb(2, 136, 209);
+  background-color: #FFFFFF;
+}
+
+.assessments {
+	width: 100%;
+	height: 20%;
+}
+
+/* TABLET LAYOUT: For screens with widths between 481px and 768px. */
+
+@media only screen and (min-width: 481px) {
+
+	/* COURSES PAGE */
+
+  .landing .content {
+    top: 5%;
+  }
+
+	.courseIntro {
+		font-size: 1em;
+	}
+
+  .databases h2, .networks h2, .software h2, .websites h2 {
+  	font-size: 1.2em;
+  }
+
+  .databases p, .networks p, .software p, .websites p {
+  	font-size: 1em;
+  }
+
+}
+
+/* DESKTOP LAYOUT: For screens with widths above 769px. */
+
+@media only screen and (min-width: 769px) {
+
+	/* COURSES PAGE */
+
+  .landing .content {
+    top: 17.5%;
+  }
+
+	.courseLinks li {
+		float: left;
+	}
+
+  .curriculum, .assessments {
+    margin: 0 auto;
+		width: 45%;
+		height: 20%;
+		float: left;
+	}
+
+  .curriculum .list {
+    max-height: 20em;
+  }
+
+}

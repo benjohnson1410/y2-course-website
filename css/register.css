@@ -1,0 +1,102 @@
+/* REGISTRATION FORM */
+body {
+  margin: 0;
+  padding: 0;
+  background: url("../img/i13.jpeg");
+  background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+h1, label, p, a {
+  color: #FFFFFF;
+  text-shadow: 0em 0.1em 0.375em rgba(0, 0, 0, 0.45);
+}
+
+a {
+  text-decoration: none;
+}
+
+#regForm {
+  margin: 0 auto;
+  padding: 1em;
+  width: 100%;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+#regForm input, #regForm select {
+  margin: 0.5em 0;
+  padding: 0.5em;
+  width: 85%;
+  font-family: 'Montserrat', sans-serif;
+  color: #FFFFFF;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 0.0625em solid #CCCCCC;
+}
+
+#regForm input {
+  width: 85%;
+}
+
+#genderM, #genderF, #genderO, #adminRights,
+#tutorRights, #studentRights, #policies {
+  width: auto!important;
+}
+
+#gender label, #adminRights label, #tutorRights label,
+#studentRights label, #policies label {
+  padding: 0.5em;
+}
+
+#address input, #office input {
+  margin: 0.5em 0;
+}
+
+#regForm select {
+
+}
+
+.submit, .clear {
+	margin: 1em 0 0 0;
+	padding: 0.25em;
+	line-height: 0;
+	border: none;
+	border-radius: 100%;
+}
+
+.submit {
+	color: #FFFFFF;
+	background-color: #7CB342;
+}
+
+.clear {
+	color: #FFFFFF;
+	background-color: #D32F2F;
+}
+
+/* HIDDEN INPUTS */
+#intUser, #admin, #tutor, #student, #nextOfKin {
+  display: none;
+}
+
+/* TABLET LAYOUT: For screens with widths between 481px and 768px. */
+
+@media only screen and (min-width: 481px) {
+
+  #regForm input, #regForm select {
+    width: 90%;
+  }
+
+}
+
+/* DESKTOP LAYOUT: For screens with widths above 769px. */
+
+@media only screen and (min-width: 769px) {
+
+  #regForm input, #regForm select {
+    width: 95%;
+  }
+
+}

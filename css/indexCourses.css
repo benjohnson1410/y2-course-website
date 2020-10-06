@@ -1,0 +1,191 @@
+/* INDEX PAGE: COURSES SECTION */
+#courses {
+	margin: auto;
+	padding: 0;
+	overflow: hidden;
+	background: linear-gradient(rgba(0, 188, 212, 0.5), rgba(25, 118, 210, 0.5)), url("../img/i6.jpeg");
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#coursesBody h1, .p1 {
+	color: #FFFFFF;
+}
+
+#coursesBody p {
+	font-size: 0.75em;
+}
+
+.courseBox {
+	display: block;
+	margin: auto;
+	padding: 0.5em;
+	width: auto;
+	height: 4.5em;
+	background: rgba(255,255,255,1);
+	border: none;
+	box-shadow: 0 0.125em 0.75em rgba(0, 0, 0, 0.24);
+}
+
+.courseBox h2 {
+	position: relative;
+	top: -1.15em;
+	float: right;
+}
+
+.inBrief {
+	display: none;
+}
+
+.details {
+	cursor: pointer;
+	padding: 0 19.5%;
+	position: relative;
+	top: -35%;
+	overflow: hidden;
+	width: 61%;
+	height: 65%;
+	text-align: center;
+	background-color: #29B6F6;
+	border: none;
+}
+
+.details a {
+	position: relative;
+	top: 30%;
+	width: auto;
+	height: 1.5em;
+	text-decoration: none;
+	line-height: 0;
+	font-size: 1em;
+	color: #FFFFFF;
+}
+
+.details a .material-icons {
+	font-size: 0.75em;
+}
+
+.register {
+	margin: auto;
+	overflow: hidden;
+	width: 100%;
+	height: auto;
+	border: none;
+	background-color: #00BCD4;
+	font-size: 1em;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+.register i {
+	font-size: 1em;
+}
+
+/* TABLET LAYOUT: For screens with widths between 481px and 768px. */
+
+@media only screen and (min-width: 481px) {
+
+	/* INDEX PAGE */
+	.courseBox {
+		margin: 1%;
+		width: 100%;
+		float: left;
+	}
+
+	.courseHeader {
+		display: block;
+		position: relative;
+		top: -27%;
+		width: auto;
+		height: 0;
+		border-left: 3em solid transparent;
+		border-bottom: 2em solid rgb(25, 118, 210);
+	}
+
+	.courseHeader h2 {
+		padding: 0.25em;
+		top: 30%;
+		color: #FFFFFF;
+	}
+
+	.inBrief {
+		display: none;
+	}
+
+	.details {
+		padding: 0 20%;
+		top: -41%;
+		width: 60%;
+		height: 55%;
+	}
+
+	.details a {
+		font-size: 1.5em;
+	}
+
+	.register {
+		font-size: 1.375em;
+	}
+
+}
+
+/* DESKTOP LAYOUT: For screens with widths above 769px. */
+
+@media only screen and (min-width: 769px) {
+
+	/* INDEX PAGE */
+	#coursesBody .p1 {
+		font-size: 1em;
+	}
+
+	.courseBox {
+		width: 43%;
+		height: 9em;
+	}
+
+	.db, .sw {
+		margin-right: 6%;
+	}
+
+	.courseHeader {
+		display: block;
+		position: relative;
+		top: -14%;
+		width: auto;
+		height: 0;
+		border-left: 2.5em solid transparent;
+		border-bottom: 2.5em solid rgb(25, 118, 210);
+	}
+
+	.courseHeader h2 {
+		padding: 0.125em;
+		font-size: 2.25em;
+		color: #FFFFFF;
+	}
+
+	.inBrief {
+		display: block;
+		position: relative;
+		top: -23%;
+		overflow: hidden;
+		width: 100%;
+		height: 50%;
+		font-size: 0.8em;
+		float: left;
+	}
+
+	.details {
+		position: relative;
+		top: -21.5%;
+		width: 60%;
+		height: 20%;
+		float: right;
+	}
+
+	.details a {
+		position: relative;
+		top: 7.5%;
+	}
+}

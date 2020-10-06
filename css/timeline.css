@@ -1,0 +1,94 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 3.125em auto;
+	background: #000099;
+}
+
+h2 #evt {
+	font-stretch: extra-expanded;
+}
+
+p {
+	margin: 0.6em 0;
+}
+
+/* CONTAINER */
+
+.container {
+	width: 90%;
+	overflow: auto;
+	margin: auto;
+}
+
+/* TIMELINE */
+
+#tlLine {
+	margin: auto;
+	position: relative;
+	overflow: hidden;
+	width: 0em;
+	min-height: auto;
+	border: 1px solid #FFFFFF;
+	z-index: -1;
+}
+
+#timeline {
+	position: absolute;
+	top: 15%;
+	overflow: hidden;
+	width: 90%;
+	z-index: 1;
+}
+
+.block {
+	position: sticky;
+	overflow: hidden;
+}
+
+#year {
+	display: block;
+	margin: auto;
+	width: 5%;
+	height: 10%;
+	border: 0.25em solid #0099FF;
+	border-radius: 100%;
+	background-color: #000099;
+	text-align: center;
+	z-index: 1;
+}
+
+#year div {
+	padding: 1.25em 0 1.25em 0;
+	color: #FFFFFF;
+}
+
+#leftEvt, #rightEvt {
+	margin: 1.25em 0;
+	padding: 0.6em 3em;
+	width: 35%;
+	border-radius: 0.750em;
+	background-color: #FFFFFF;
+}
+
+#leftEvt:before, #rightEvt:before {
+	content: "";
+	position: absolute;
+	left: 49.125%;
+	width: 1em;
+	height: 1em;
+	border: 0.125em solid #0099FF;
+	border-radius: 100%;
+	background-color: #000099;
+}
+
+#leftEvt {
+	float: left;
+}
+
+#rightEvt {
+	float: right;
+}
